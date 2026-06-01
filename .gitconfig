@@ -1,0 +1,22 @@
+# ~/.gitconfig — Lucas Moreira (company machine)
+# Cleaned 2026-06-01: company identity, dropped Windsurf diff/merge tools and
+# the machine-specific coderabbit id (regenerated automatically per machine).
+
+[user]
+	name = Lucas Moreira
+	email = lucas.moreira@koltin.mx
+
+[core]
+	editor = zed --wait
+
+[init]
+	defaultBranch = main
+
+[pull]
+	rebase = false
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
