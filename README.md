@@ -18,3 +18,14 @@ Installs Homebrew, oh-my-zsh + powerlevel10k, symlinks the configs, runs `brew b
 - `config/zed/settings.json`: editor
 - `Brewfile`: formulae, casks, VS Code extensions
 - `install.sh`: the installer
+
+## Git identity
+
+The committed `.gitconfig` defaults to the personal address. Work directories pick up a
+different one through `~/.gitconfig-work`, which is machine-local and deliberately not in this
+repo:
+
+```
+[user]
+	email = you@employer.example
+```
