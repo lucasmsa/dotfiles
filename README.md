@@ -21,9 +21,8 @@ Installs Homebrew, oh-my-zsh + powerlevel10k, symlinks the configs, runs `brew b
 
 ## Git identity
 
-The committed `.gitconfig` defaults to the personal address. Work directories pick up a
-different one through `~/.gitconfig-work`, which is machine-local and deliberately not in this
-repo:
+The committed `.gitconfig` defaults to the personal address. For a per-directory override, add an `includeIf` to a machine-local file
+rather than to this one, so no employer address or path lands in a public repo:
 
 ```
 [user]

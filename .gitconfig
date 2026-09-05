@@ -1,14 +1,10 @@
 # ~/.gitconfig — Lucas Moreira
-# Personal identity is the default. Work directories override it through
-# ~/.gitconfig-work, which is machine-local and never committed here, so this
-# file carries no employer address.
+# Personal identity only. Any per-directory override lives in a machine-local
+# include that is never committed here, so this file carries no employer address.
 
 [user]
 	name = Lucas Moreira
 	email = lucasmsea@outlook.com
-
-[includeIf "gitdir:~/Main/koltin/"]
-	path = ~/.gitconfig-work
 
 [core]
 	editor = zed --wait
